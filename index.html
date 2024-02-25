@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title>Generator</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<meta charset='utf-8'>
+	<title>Generator</title>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
 </head>
 <body>
-    <canvas id="myCanvas" width="1000" height="600" style="border:1px solid #d3d3d3;">
-        Your browser does not support the HTML canvas tag.</canvas><br>
-    <button id="btn-start">start</button>
-    <button id="btn-stop">stop</button><br>
+	<canvas id="myCanvas" width="1000" height="600" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML canvas tag.
+	</canvas><br>
+	<button id="btn-start">start</button>
+	<button id="btn-stop">stop</button><br>
 	<input type="range" id="slider-freq" name="slider-freq" min="0" max="20000">
 	<label for="slider-freq">f (0 - 2000Hz):</label>
 	<span id="info-freq"></span>
 	<p><input type="radio" name="radio-type" onchange="chnageOscType(this);" value="sine" checked >sine</p>
-    <p><input type="radio" name="radio-type" onchange="chnageOscType(this);"value="square">square</p>
-    <p><input type="radio" name="radio-type" onchange="chnageOscType(this);"value="sawtooth">sawtooth</p>
+	<p><input type="radio" name="radio-type" onchange="chnageOscType(this);"value="square">square</p>
+	<p><input type="radio" name="radio-type" onchange="chnageOscType(this);"value="sawtooth">sawtooth</p>
 	<p><input type="radio" name="radio-type" onchange="chnageOscType(this);"value="triangle">triangle</p>
-    <script src='main.js'></script>
+	<script src='main.js'></script>
 </body>
 </html>
